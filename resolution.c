@@ -6,12 +6,57 @@
 /*   By: augberna <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/04/11 18:40:46 by augberna     #+#   ##    ##    #+#       */
-/*   Updated: 2018/04/11 19:21:23 by augberna    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/07/14 03:42:02 by lloyet      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "header.h"
+
+int			ft_listlen(t_piece *list)
+{
+	int len;
+
+	while (list->next)
+		len++;
+	return (len);
+}
+
+void		free_tab(char **tab)
+{
+	while (tab)
+		free((*tab)++);
+	return ;
+}
+
+int			can_i_put(char ***tab, t_type type, int *i, int n)
+{
+
+	if ()
+}
+
+void		put(t_piece *next, char ***tab, int n)
+{
+	return ;
+}
+
+void		unput(t_piece *list, int *i, char ***tab)
+{
+	return ;
+}
+
+void		created_tab(char ***tab, int n)
+{
+
+	return ;
+}
+
+int			special_sqrt(int size)
+{
+	int sqrt;
+
+	return (sqrt);
+}
 
 int			backtrack(t_piece *list, char ***tab, int n)
 {
